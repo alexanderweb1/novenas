@@ -1,0 +1,267 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia 1</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- fuentes de google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <main class="main__dias">
+
+    <section class="seccion__dias">
+
+      <h2 class=" seccion-titulo titulo__principal--dia bg-info">
+        {% block titulo_diaC %}{% endblock %}
+      </h2>
+
+      <div class="container text__container">
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">PREPARACION</h3>
+          <p class="text__parrafos--dia">
+            <b>En el nombre del padre, del Hijo y del Espíritu Santo. Amen</b>
+            <br>
+            Soberana protectora nuestra,
+            ¡Madre de todas las virtudes!
+            ¡Virgen sin mancha!
+            Rendidos humildemente a vuestras plantas,
+            llenos de fe en vuestro patrocinio,
+            imploramos vuestro favor
+            y el auxilio de las gracias celestiales
+            para hacer de modo debido esta novena
+            de la cual esperamos sacar,
+            por la imitación de vuestra santísima vida,
+            el provecho de nuestras almas,
+            la enmienda para lo futuro,
+            el perdón y la misericordia
+            para la hora de nuestra muerte.
+            <b>Amén.</b>
+          </p>
+        </div>
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">ORACION INICIAL PARA TODOS LOS DIAS</h3>
+          <p class="text__parrafos--dia">
+
+            Salve Reina misericordiosa de los cielos y la tierra,
+            que bajo la advocación de el Cisne
+            habéis querido protegernos tan especialmente,
+            haciéndonos el objeto de señalados favores y gracias particulares.
+            Bendecidnos como Madre amantísima,
+            ya que os habéis dignado escoger nuestro territorio
+            para uno de los santuarios de vuestro culto y asilo
+            de los que os aman y vienen a buscar el consuelo
+            de sus aflicciones y necesidades, acogiéndose a vuestro amparo.
+            Bendecidnos,
+            Vos sois nuestra salud, nuestra paz y alegría;
+            Vos sois la luz de nuestro cielo,
+            el rocío de nuestros campos,
+            la esperanza de nuestra salvación.
+            Bajo vuestras plantas
+            las sementeras se cubren de flores y de frutos,
+            ante vuestra presencia los estériles yermos se fecundan
+            y a vuestro paso se alegran y vivifican los valles y las colinas.
+            Bendecid, divina Pastora, los rebaños del campesino,
+            las labores del agricultor,
+            las faenas y labranzas
+            para que la tierra produzca las cosechas necesarias,
+            el pan de cada día para vuestros hijos.
+            Bendecidnos, conservando la inocencia de nuestros niños,
+            la pureza de las vírgenes, la piedad de las matronas,
+            la moralidad de las costumbres, la devoción del pueblo,
+            el reconocimiento cristiano de las familias
+            y la concordia doméstica.
+            Bendecidnos, no permitiendo que se turbe la paz pública,
+            como patrona singular de esta provincia
+            y benefactora de la República entera,
+            apartando por vuestra misericordia los males de la guerra,
+            del hambre, de la peste y de los terremotos
+            que tenemos merecidos por nuestras gravísimas culpas
+            y continuas reincidencias.
+            Aceptad benigna, el humilde homenaje de esta novena
+            y los votos de nuestro amor reverente,
+            como una primicia filial de vuestro pueblo,
+            dignaos admitir las ofrendas y plegarias de los peregrinos
+            que vienen a vuestro templo a implorar socorro
+            y daros gracias por los beneficios que les dispensáis;
+            a buscar a vuestros pies la tranquilidad,
+            el consuelo, la salud, el remedio de todos los males
+            y amarguras que nos rodean en este valle de lágrimas
+            y publicar los prodigios de vuestro favor
+            y los portentos de vuestra eficacia.
+            Bendecidnos y por vuestra intercesión
+            logremos ser exaltados a la Jerusalén celestial
+            adonde os rogamos nos conduzcáis
+            para ser dignos de vuestras alabanzas,
+            por los siglos de los siglos. <b>Amén.</b>
+          </p>
+        </div>
+
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">LECTURA DIARIA</h3>
+          <p class="text__parrafos--dia">
+
+            {% block lectura_diaria %}
+            {% endblock %}
+          </p>
+        </div>
+
+        <div class=" text__lecturas--dia">
+          <h3 class="text__titulo--dia">GOZOS</h3>
+          <p class="text__parrafos--dia text-center">
+
+            Salve, divina María
+            de luz y de gloria llena,
+            vida, perfección y gracia
+            del Edén, celestial Eva,
+            fuente de abundantes aguas,
+            sol de la inmortal belleza.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Casta esposa, limpia Virgen,
+            de Inmaculada pureza,
+            a quien alaban los cielos
+            y venera humilde la tierra;
+            paloma de amor sin mancha,
+            flor del valle siempre fresca.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Tú que en Nazareth oculta,
+            como púdica violeta,
+            del arcángel al anuncio
+            te abates y llamas sierva
+            y aquí buscas las cabañas
+            y de pastores la aldea.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Ante el decreto inmutable
+            que tu ardiente fe venera,
+            así como esclava inclinas
+            tu augusta frente de reina;
+            hágase en mí tu palabra,
+            la voluntad de Dios sea.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Pobre, sin pan, sin abrigo
+            peregrinaste en la tierra,
+            en tu pueblo mendigando
+            un hogar, siendo su reina,
+            y fue la cuna de tu Hijo
+            de pajas y toscas piedras.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Más a Ti todos acuden
+            y socorres y consuelas,
+            tus favores y tus gracias
+            derramando a manos llenas
+            nadie quedó sin alivio
+            si con fe tocó en tu puerta.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Como el ave del desierto
+            sólo para Dios gorjea,
+            así, Tú, muda en el mundo,
+            al cielo tu voz elevas,
+            de amor secreta armonía
+            que sólo el Señor le llega.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            De tu estancia en el retiro
+            como esposa y madre tierna
+            pasó tu vida, Señora,
+            de las familias maestra,
+            bienes prodigando al hombre
+            hasta que al Eterno vuelas.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+            <br>
+            <br>
+            Bendice nuestros hogares,
+            y en ellos la paz conserva
+            y el amor y la alegría.
+            De los niños la inocencia,
+            la santidad de las madres
+            y el pudor de las doncellas.
+            <br>
+            <br>
+            <b>!!A tus devotos ampara y tus virtudes enseña!!</b>
+          </p>
+        </div>
+
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">ORACION FINAL PARA TODOS LOS DIAS</h3>
+          <p class="text__parrafos--dia">
+            ¡Oh María!
+            Vos sois llamada nuestra abogada,
+            nuestra mediadora,
+            nuestra reina
+            porque por vuestras manos
+            Dios ha resuelto concedernos
+            todas sus gracias.
+            A Vos, pues, recurrimos.
+            ¿Podréis desecharnos?
+            No: porque jamás habéis negado
+            vuestra asistencia
+            al que os ha expuesto sus necesidades
+            con toda la sinceridad del corazón.
+            Con esa confianza
+            esperamos que nos protegeréis
+            a fin de que podamos llegar
+            al feliz término
+            de nuestra peregrinación
+            por este mundo. <br>
+            Amén. <br>
+            <br>
+            Que el Señor nos bendiga,
+            nos guarde de todo mal
+            y nos lleve a la vida eterna.
+            R/ Amén
+            <br>
+            <br>
+            <b>En el nombre del Padre, y del Hijo y del Espíritu Santo.</b>
+
+          </p>
+
+
+        </div>
+      </div>
+
+
+    </section>
+  </main>
+</body>
+
+</html>

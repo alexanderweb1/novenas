@@ -1,0 +1,520 @@
+:root {
+  --fuente-1: "Rubik Dirt", cursive;
+  --fuente-2: "Source Sans Pro", sans-serif;
+  --fuente-3: "Ubuntu", sans-serif;
+  --altura-navbar: 70px;
+  --fondo__titulo-p: aqua;
+  --fondo__titulo-s: rgb(171, 182, 182);
+  --fondo__parrafos: rgb(201, 239, 239);
+}
+
+/* barra de navegacion */
+.barra__nav {
+  position: fixed;
+  z-index: 100;
+  width: 100%;
+  margin-bottom: var(--altura-navbar);
+}
+
+.navbar {
+  width: 100%;
+  background: linear-gradient(#efedf3, rgb(171, 172, 172));
+  min-height: var(--altura-navbar);
+}
+
+.navbar-collapse {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  /* background: linear-gradient(#efedf3, lightblue); */
+  padding: 5px 10px;
+  border-radius: 20%;
+  box-shadow: 0 0 10px 10px lightblue;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.nav-item {
+  padding: 5px 10px;
+  transition: all 400ms ease;
+  border-radius: 10px;
+}
+
+.nav-item:hover {
+  background: linear-gradient(#efedf3, lightblue);
+}
+
+.nav-link {
+  font-weight: bold;
+}
+
+/* estilos generales */
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.seccion-titulo {
+  font-family: var(--fuente-1);
+  padding: 40px;
+  text-align: center;
+  font-size: 2.2rem;
+}
+
+.seccion-parrafo-p {
+  font-family: var(--fuente-2);
+  padding: 15px 40px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.seccion__parrafo--2 {
+  padding: 10px 10px 20px;
+  font-size: 1.1rem;
+  font-family: var(--fuente-3);
+}
+
+/* hero */
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: end;
+}
+
+.hero__principal {
+  position: absolute;
+  transform: scale(-50% -50%);
+  background: linear-gradient(#fefeffe3, #b2b2b2a6);
+
+  width: 100%;
+  border-radius: 60% 60% 0 0;
+  padding: 15px;
+}
+
+.hero__img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero__title {
+  font-family: var(--fuente-1);
+  padding: 30px 0;
+  font-size: 40px;
+  /* text-align: center; */
+}
+
+/* pasajes biblics */
+
+.pasajes-biblicos {
+  padding: 10px 2vh 2%;
+  text-align: center;
+  align-items: center;
+  background: linear-gradient(#f7f4f7, rgb(229, 229, 231));
+}
+
+.pasajes-biblicos .carousel {
+  max-width: 800px;
+  min-height: 500px;
+}
+
+.carousel .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  max-width: 70%;
+}
+
+.container .carousel-img {
+  min-width: 150px;
+  max-height: 150px;
+  object-fit: cover;
+  display: block;
+  border-radius: 50%;
+  margin: 50px;
+}
+
+.container .carousel-titulo {
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+
+/* novenas */
+.novenas {
+  padding: 10px 0 50px;
+
+}
+
+.novenas .container__novenas {
+  display: grid;
+  justify-content: center;
+  width: 100%;
+}
+
+.card__novena {
+  background-color: rgba(63, 208, 208, 0.2);
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  transition: all 400ms ease;
+  gap: 20px;
+}
+
+.card__novena:hover {
+  box-shadow: 0 0 15px 0px #00000099;
+  transform: translateY(-3px);
+}
+
+.card__img--dimensiones {
+  max-width: 100%;
+  max-height: 220px;
+  object-position: center center;
+}
+
+.card__contenedor {
+  padding: 20px 15px;
+  /* display: flex; */
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card__titulo {
+  padding: 20px 0 5px;
+  font-weight: bold;
+  color: rgb(30, 0, 255);
+}
+
+.card__parrafo {
+  line-height: 1.7;
+  text-align: start;
+}
+
+.card__bottom {
+  /* display: block; */
+  background-color: #4214f8;
+  max-width: 50%;
+  color: white;
+  padding: 10px;
+  margin: 0 auto;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 400ms ease;
+}
+
+.card__bottom:hover {
+  background-color: #c6c4e6;
+  color: black;
+}
+
+/* sobre mi */
+.sobre-mi {
+  color: aqua;
+  min-height: 450px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 20px 20px 70px;
+}
+
+.sobre-mi__contenedor {
+  max-width: 700px;
+  border: 2px dashed;
+}
+
+/* contacto */
+
+.contacto {
+  background-color: #e9e2f8;
+  width: 100%;
+  min-height: 400px;
+}
+
+.contacto .container {
+  padding: 15px;
+  max-width: 1100px;
+  min-height: 200px;
+}
+
+.container__blue {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  padding: 20px 10px;
+  /* margin-top: -5rem; */
+  display: flex;
+  align-items: center;
+}
+
+.row__container {
+  align-items: center;
+}
+
+.column__parrafo {
+  font-family: var(--fuente-3);
+  padding-bottom: 15px;
+}
+
+.column__link {
+  display: inline-block;
+  padding: 1.2rem 2rem;
+  border-radius: 50px;
+  color: white;
+  border: 2px solid white;
+  font-size: 1.1rem;
+  text-decoration: none;
+}
+
+.column__link:hover {
+  background-color: #fefefe;
+  color: black;
+}
+
+.column__link i {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+/* dias de novena */
+
+.main__dias {
+  background: linear-gradient(#fafafa, lightblue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info__dias {
+  text-align: center;
+}
+
+.info__dias--titulo {
+  border-radius: 0 0 40% 40%;
+}
+
+.bottom__dias {
+  position: relative;
+  background-color: #0730ff;
+  bottom: 0;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  border-radius: 40% 40% 0 0;
+}
+
+.boton__dias--atras {
+  padding: 1rem 2rem;
+  background-color: #cdcde6a9;
+  font-weight: bold;
+  font-size: 19px;
+  margin: 12px;
+  box-shadow: 0 0 15px 6px #0000ffa9;
+  transition: all 0.7s ease;
+}
+
+.boton__atras:hover {
+  background: #15dc1f;
+  box-shadow: 0 0 15px 6px #15dc1f;
+}
+
+.info__dias--titulo {
+  font-family: var(--fuente-1);
+  font-size: 35px;
+}
+
+.dias__columna {
+  padding: 12px 0;
+  /* max-width: 500px; */
+}
+
+.proyecto {
+  position: relative;
+  background-color: rgb(35, 13, 13);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.7s ease;
+  width: 100%;
+}
+
+.proyecto__img {
+  max-width: 100%;
+  /* max-height: 400px; */
+}
+
+.proyecto__img:hover {
+  opacity: 0.5;
+}
+
+.card__overlay {
+  position: absolute;
+  text-align: center;
+  opacity: 1;
+  transition: all 0.7s ease;
+  padding: 0;
+}
+
+.proyecto:hover .card__overlay {
+  opacity: 0;
+}
+
+.card__titulo {
+  padding: 0;
+}
+
+/* contenido de los dias */
+
+.titulo__principal--dia {
+  border-radius: 0 0 200px 200px;
+}
+
+.text__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: justify;
+  padding: 30px 10px;
+}
+
+.leido {
+  opacity: 0.6;
+  /* Hace que se vea más apagado */
+  filter: grayscale(100%);
+  /* Lo pone en blanco y negro */
+}
+
+.text__lecturas--dia {
+  background-color: var(--fondo__parrafos);
+  border-radius: 10px 10px 0 0;
+  max-width: 900px;
+  text-align: justify;
+}
+
+.text__titulo--dia {
+  background-color: var(--fondo__titulo-s);
+  padding: 5px 0;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  font-weight: bold;
+  max-width: 100%;
+}
+
+.text__parrafos--dia {
+  max-width: 900px;
+  padding: 10px;
+  background-color: var(--fondo__parrafos);
+}
+
+
+
+/* footer */
+.footer__column {
+  padding-right: 10px;
+}
+
+.footer__title {
+  color: aqua;
+  padding: 12px 0 20px;
+  border-bottom: 2px solid;
+}
+
+.foter__list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer__item::after {
+  content: " ";
+  height: 4px;
+  width: 0;
+  color: white;
+  transition: all 400ms ease;
+}
+
+.footer__item::after:hover {
+  width: 100%;
+}
+
+.row__redes {
+  padding: 40px 10px;
+  /* border-top: 2px solid aqua; */
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__list--redes {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+}
+
+.footer__item--redes {
+  font-size: 25px;
+  transition: all 400ms ease;
+  color: white;
+}
+
+.footer__item--redes:hover {
+  transform: scale(1.3);
+}
+
+.footer__link {
+  text-decoration: none;
+}
+
+/* colres de iconos redes */
+.bi-facebook:hover {
+  color: #0730ff;
+}
+
+.bi-whatsapp:hover {
+  color: #25d366;
+}
+
+.bi-telegram:hover {
+  color: #2aabee;
+}
+
+.bi-twitter:hover {
+  color: #00acee;
+}
+
+.bi-youtube:hover {
+  color: #c4302b;
+}
+
+.column__terminos {
+  padding: 20px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-brand {
+    display: none;
+  }
+
+  .footer__title {
+    display: inline-block;
+  }
+}

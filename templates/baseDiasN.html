@@ -1,0 +1,171 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dia 1</title>
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- fuentes de google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&family=Source+Sans+Pro:ital,wght@0,300;0,400;1,200&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <main class="main__dias">
+    <section class="seccion__dias">
+      <h2 class="seccion-titulo bg-info titulo__principal--dia">
+        {% block titulo_dia %} {% endblock %}
+      </h2>
+
+      <div class="container text__container">
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">CREDO</h3>
+          <p class="text__parrafos--dia">
+            (Es el resumen de todo lo que hay que creer para salvarse) <br>
+            CREO EN DIOS PADRE TODO PODEROSO, creador del cielo y de la tierra. Creo en Jesucristo, su único Hijo,
+            nuestro
+            Señor, que fue concebido por obra y gracia del Espíritu Santo, nació de Santa María Virgen, padeció bajo el
+            poder de Poncio Pilato, fue crucificado, muerto y sepultado, descendió a los infiernos, al tercer día
+            resucitó
+            de entre los muertos, subió a los cielos y está sentado a la derecha de Dios Padre Todo Poderoso; desde allí
+            ha de venir a juzgar a vivos y muertos. Creo en el Espíritu Santo, la Santa Iglesia Católica, la comunión de
+            los santos, el perdón de los pecados, la resurrección de los muertos, y la vida eterna, Amen.
+            En el nombre del Padre, del Hijo y del Espíritu Santo. Amen
+          </p>
+        </div>
+
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">ORACION INICIAL PARA TODOS LOS DIAS</h3>
+          <p class="text__parrafos--dia">
+
+            Señor Dios, Rey omnipotente; en tus manos están puestas todas las cosas. Si quieres salvar a tu pueblo nadie
+            puede resistir a tu voluntad, Tú hiciste el cielo y la tierra y todo cuanto en ellos se contiene, Tu eres el
+            dueño de todas las cosas. ¿Quién podrá pues, resistir a tu majestad? Señor, Dios de nuestros padres: ten
+            misericordia de tu pueblo porque los enemigos del alma quieren perdernos y las dificultades que se nos
+            presentan son muy grandes. Tu has dicho: “Pedid y se os dará. El que pide recibe. Todo lo que pidáis al
+            Padre
+            en mi nombre os lo concederá. Pero pedid con fe”. Escucha pues nuestras oraciones. Perdona nuestras culpas.
+            Aleja de nosotros los castigos que merecemos y haz que nuestro llanto se convierta en alegría, para que
+            viviendo alabemos tu santo nombre y continuemos alabándolo eternamente en el cielo. Amén.
+          </p>
+        </div>
+
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">ORACION A LA VIRGEN SANTISIMA</h3>
+          <p class="text__parrafos--dia">
+            Acuérdate, oh piadosísima Virgen María, que jamás se ha oído decir que alguno de cuantos han acudido a tu
+            protección e implorado tu socorro, haya sido abandonado de Ti. Animados por esta confianza, a ti acudimos, y
+            aunque agobiados bajo el peso de nuestros pecados nos atrevemos a implorar tu favor, pues eres abogada de
+            los
+            pecadores y auxilio de los cristianos. No deseches, oh madre de Dios, nuestras humildes suplicas, mas bien,
+            alcánzanos el perdón de nuestros pecados, luz y acierto para hacer una buena confesión de todos ellos,
+            virtud
+            para conservar siempre la gracia de Dios y con tu auxilio conseguir nuestra eterna salvación.
+            Y, si conviene para el bien de nuestras almas, te pedimos los siguientes favores (cada uno pida las gracias
+            que desea) y deseamos, que en todo se cumpla la voluntad de Dios. Amén.
+            Rezar Padre Nuestro, Ave María y Gloria
+
+          </p>
+        </div>
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">LECTURA BIBLICA</h3>
+          <p class="text__parrafos--dia">
+            {% block lectura_biblica %}{% endblock %}
+          </p>
+        </div>
+
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">GOZOS</h3>
+          <p class="text__parrafos--dia text-center">
+            <b>Oh Divino Niño mi Dios y Señor tu serás el dueño de mi corazón.</b>
+            <br>
+            <br>
+            Niño amable del mi vida
+            consuelo de los cristianos
+            la gracia que necesito
+            pongo en tus divinas manos
+            <br>
+            <br>
+            <b>Oh Divino Niño mi Dios y Señor tu serás el dueño de mi corazón.</b>
+            <br>
+            <br>
+            Tu que sabes mis pesares
+            pues todos te los confió
+            da la paz a los turbados
+            y alivio al corazón mío
+            <br>
+            <br>
+            <b>Oh Divino Niño mi Dios y Señor tu serás el dueño de mi corazón.</b>
+            <br>
+            <br>
+            Y aunque tu amor no merezco
+            no recurriré a ti en vano
+            pues eres Hijo de Dios
+            y consuelo del cristiano
+            <br>
+            <br>
+            <b>Oh Divino Niño mi Dios y Señor tu serás el dueño de mi corazón.</b>
+            <br><br>
+            Acuérdate o Niño Santo
+            que jamás se oyó decir
+            que alguno te haya implorado
+            sin tu auxilio recibir
+            <br>
+            <br>
+            <b>Oh Divino Niño mi Dios y Señor tu serás el dueño de mi corazón.</b>
+            <br><br>
+            Por eso con fe y confianza
+            humildes y arrepentidos
+            llenos de amor y confianza
+            tu protección te pedimos
+            <br>
+            <br>
+            <b>Oh Divino Niño mi Dios y Señor tu serás el dueño de mi corazón.</b>
+          </p>
+        </div>
+
+        <div class="text__lecturas--dia">
+          <h3 class="text__titulo--dia">ORACION FINAL PARA TODOS LOS DIAS</h3>
+          <p class="text__parrafos--dia">
+            (Para todos los días)
+            Acuérdate oh dulcísimo Niño Jesús que has dicho: “Todo lo que queráis pedir, pedidlo por los méritos de mi
+            infancia y nada os será negado”. Si queréis agradarme, confiad en mi. Si queréis agradarme más, confiad más.
+            Si queréis agradarme inmensamente, confiad inmensamente en mi. Según sea vuestra fe, así serán las cosas que
+            os sucederán. Nada es imposible para quien tiene fe.
+            Nosotros queremos confiar inmensamente en ti. Por los méritos de tu infancia, ayúdanos a llevar una vida
+            santa. Perdónanos nuestras culpas, líbranos de los castigos que merecemos por nuestros pecados, y de todos
+            los
+            peligros para el alma y el cuerpo; concédenos aquellos favores que más estamos necesitando, y después de una
+            vida llena de paz, de alegría y de buenas obras, llévanos a la gloria del paraíso, donde con el Padre, y el
+            Espíritu Santo, vives y reinas por los siglos de los siglos. Amén.
+            Jesús, José y María, -bendice nuestros hogares
+            Jesús, José y María, -libradnos de todo mal
+            Jesús, José y María, -salvad nuestras almas. Amén. Aleluya.
+            Jesús manso y humilde de corazón, haz nuestro corazón semejante al
+            tuyo.
+
+          <p class="text__parrafos--dia"><b>En el nombre del Padre, y del Hijo y del Espíritu Santo. Amén</b></p>
+
+
+        </div>
+      </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
