@@ -262,6 +262,13 @@
 
     </section>
   </main>
+  <script>
+    const novena = "{{ novena|default:'sin_novena' }}";
+    const dia = "{{ dia|default:'0' }}";
+
+    const key = `novena_${novena}_dia_${dia}`;
+    localStorage.setItem(key, 'leido');
+  </script>
 </body>
 
 </html>

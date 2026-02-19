@@ -16,3 +16,5 @@ def novena_diaN(request, novena, dia):
 
 def novena_diaC(request, novena, dia):
     return render(request, f'DiasCisne/Dia{dia}n.html', {'novena': novena, 'dia': dia})
+
+
